@@ -1,0 +1,112 @@
+#mi {
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 10px; 
+}
+
+#modal-body {
+    padding-top: 10px;
+    padding-left: 17px; 
+    padding-bottom: 10px;
+    padding-right: 17px; 
+}
+#button5{
+    border-radius: 50%;
+    background-color: rgb(208, 123, 123);
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    padding-bottom: 7px;
+    box-shadow: 3px 3px 3px grey;
+    position: fixed; /* Fixed positioning */
+    top: 10px; /* Distance from the top of the viewport */
+    left: 10px; /* Distance from the left of the viewport */
+    z-index: 1000
+  }
+  #button5:hover{
+    background-color:rgb(123, 46, 46);   
+  }
+#button1 {
+    border-radius: 50%;
+    background-color: rgb(208, 123, 123); 
+    font-size: 24px; 
+    width: 45px;
+    height: 45px; 
+    padding-bottom: 7px; 
+    box-shadow: 3px 3px 3px grey;
+}
+
+#button1:hover {
+    background-color: rgb(123, 46, 46);   
+}
+
+#playersturn {
+    padding-left: 80px; 
+    float: left;
+    color: black;
+    position: fixed;
+}
+
+
+
+#cards {
+    width: 300px;
+    height: 400px;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+}
+
+.buttons-and-image {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+}
+
+#images {
+    margin: 10px; 
+}
+
+@media (min-width: 768px) {
+    .buttons-and-image {
+        flex-direction: row;
+    }
+}
+#skip{
+    margin-left: -80;
+}
+#skip, #play {
+    border-radius: 10%;
+    background-color: rgb(208, 123, 123); 
+    font-size: 38px; 
+    color: white;
+    padding-bottom: 7px; 
+    border-color: rgb(208, 123, 123);
+}
+
+#skip:hover {
+    background-color: rgb(123, 46, 46);   
+}
+
+#play:hover {
+    background-color: rgb(123, 46, 46);   
+}
+
+#sketch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

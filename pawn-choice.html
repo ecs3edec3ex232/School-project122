@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="pawn-choice.css">
+       <script src="pawn-choice.js"></script>
+    <title>Roll Master-Pawn selection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head> 
+
+<body >
+  <button id="button5" class="fa fa-home btn btn-danger" onclick="home()"></button>
+ <div id="mi">
+    <div class="heading">
+        <button class="btn btn-danger" id="button1" data-toggle="modal" data-target="#myModal">?</button>
+      </div>
+      <div id="myModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+              <center>  <h4>Instructions</h4> </center>
+              </div>
+            <div id="modal-body">
+              <p1>
+                1. You will have the option to play or skip. 
+                <br>
+                2. If you choose skip your turn is skipped, and the turn moves to the next person. OR
+                 you choose to play.
+                 <br> 
+                 3. Assuming you chose to play, you flip a card.  Now whatever you draw you move forward by that amount. 
+                 <br>
+                 <center>
+                 BUT you will have to restart if you draw a JOKER.
+                
+                </center>
+                                                 
+
+              </p1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rounded_container">     
+
+<span>
+    <div id="player-1-card_selection">
+      
+      <center>
+        <br>
+        <h1 id="player" style="color: black; font-weight: bold;">Player 1</h1>
+        <br>
+        <br>
+        <input type="text" placeholder="Player1 Name Here" class="form-control" id="player1name" style="color: black;">
+        <br>
+        <img id="pawns" src="blue.png" width="120px" height="180px">
+       <br>
+        <h4 id="colors" style="color: black;"> Blue </h4>
+        <br>
+        <button onclick="nextPawn()" id="nextcolors"> Other colors </button>
+      </center>
+  
+  </div>
+    <div id="player-2-card_selection">
+    
+      <center>
+        <br>
+        <h1 id="player" style="color: black; font-weight: bold;">Player 2</h1>
+        <br>
+        <br>
+        <input type="text" placeholder="Player2 Name Here" class="form-control" id="player2name" style="color: black;">
+        <br>
+        <img id="pawns1" src="blue.png" width="120px" height="180px">
+        <br>
+        <h4 id="colors1" style="color: black;">Blue</h4>
+        <br>
+        <button onclick="nextpawn1()" id="nextcolors"> Other colors </button>
+      </center>
+    
+  </div>
+</span>
+<br>
+<br>
+<br>
+<br>
+<center>
+<button onclick="nextPage()" id="nextPage"> Start </button>
+</center>
+
+</body>
+</html>
