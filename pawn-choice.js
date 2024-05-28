@@ -57,6 +57,6 @@ function nextPage() {
 
 
 function home() {
-    window.location = "home.html"; // Corrected from window.loaction to window.location
+    window.location = "index.html"; // Corrected from window.loaction to window.location
 }
 
